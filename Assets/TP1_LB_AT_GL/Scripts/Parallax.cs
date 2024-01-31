@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 /*Source : This class have been created with the help of :
- * https://www.youtube.com/watch?v=zit45k6CUMk (Unity Parallax Tutorial - How to infinite scrolling background)
+ *  https://www.youtube.com/watch?v=zit45k6CUMk (Unity Parallax Tutorial - How to infinite scrolling background)
 */
 public class Parallax : MonoBehaviour
 {
