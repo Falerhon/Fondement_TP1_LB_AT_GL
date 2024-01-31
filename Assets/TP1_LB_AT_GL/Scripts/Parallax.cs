@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
+/// <summary>
+/// MADE BY : Léa Bouchard
+/// Class that manage the parallax effect
+/// It moves the different layers according to their parallaxEffect
+/// and if the camera is moving out of bounds, moves the background
+/// </summary>
 /*Source : This class have been created with the help of :
  *  https://www.youtube.com/watch?v=zit45k6CUMk (Unity Parallax Tutorial - How to infinite scrolling background)
 */
@@ -13,7 +19,6 @@ public class Parallax : MonoBehaviour
     public Camera cam;
     public float parallaxEffect;
 
-    // Start is called before the first frame update
     void Start()
     {
         Bounds boundSize = GetComponent<SpriteRenderer>().bounds;
@@ -21,7 +26,6 @@ public class Parallax : MonoBehaviour
         lenght = boundSize.size.x;
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         float dist = cam.transform.position.x * parallaxEffect;

@@ -2,15 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/// <summary>
+/// MADE BY : Léa Bouchard
+/// Simple class that triggers and "animation" when the player overlaps
+/// the gameobject
+/// </summary>
 public class BoxController : MonoBehaviour
 {
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
