@@ -2,16 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-
-public class UnnaturalBall : MonoBehaviour
+/// <summary>
+/// MADE BY : Alexandre Tremblay
+/// 
+/// Simple class that checks every 2s if the object is too far and destroys it if it is
+/// Also calls the paret's spawn function if it exists
+/// </summary>
+public class AutoDestroy : MonoBehaviour
 {
-    private Spawner spawner;
-    // Start is called before the first frame update
+
     void Start()
     {
         StartCoroutine(DistanceCheck());
-
-        spawner = FindFirstObjectByType<Spawner>();
     }
     IEnumerator DistanceCheck()
     {
@@ -19,12 +21,19 @@ public class UnnaturalBall : MonoBehaviour
 
         if(Vector2.Distance(transform.position, Vector2.zero) > 30)
         {
-            spawner.Spawn();
             Destroy(this.gameObject);
         }
         else
         {
             StartCoroutine(DistanceCheck());
+        }
+    }
+
+    private void OnDestroy()
+    {
+        if(gameObject.transform.parent.gameObject.GetComponent<Spawner>())
+        {
+            gameObject.transform.parent.gameObject.GetComponent<Spawner>().Spawn();
         }
     }
 }

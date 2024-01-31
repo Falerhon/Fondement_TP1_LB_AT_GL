@@ -1,7 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// MADE BY : Alexandre Tremblay
+/// 
+/// Simple class that adds a force to a rigidbody2D
+/// </summary>
 public class AddForce : MonoBehaviour
 {
 
