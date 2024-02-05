@@ -4,7 +4,9 @@ using UnityEngine;
 
 /// <summary>
 /// MADE BY: Guillaume Lévesque
-/// 
+///  
+/// class that sole purpose is to make a physic based rotation
+/// start everytime a poolBall collide with it we increase the angular velocity
 ///  </summary>
 public class RotatingSquare : MonoBehaviour
 {

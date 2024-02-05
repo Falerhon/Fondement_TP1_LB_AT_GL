@@ -6,6 +6,8 @@ using UnityEngine.WSA;
 /// <summary>
 /// MADE BY: Guillaume Lévesque
 /// 
+/// class that sole purpose is to demonstrate tragectory mouvement
+/// also handle collision with some object
 ///  </summary>
 public class CannnonSquare : MonoBehaviour
 {

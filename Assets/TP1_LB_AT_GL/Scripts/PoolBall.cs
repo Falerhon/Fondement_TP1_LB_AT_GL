@@ -6,6 +6,7 @@ using UnityEngine;
 /// 
 /// class that handle collision of pool Ball on wall and other ball
 /// also give basic force to ball on start up if is basic ball
+/// handle collision with a size changing square
 /// </summary>
 public class PoolBall : MonoBehaviour
 {
@@ -50,8 +51,4 @@ public class PoolBall : MonoBehaviour
         
 	}
 
-    public void Decelerate()
-    {
-        rigidBody.AddForce(-1 * rigidBody.velocity , ForceMode2D.Force);
-    }
 }
