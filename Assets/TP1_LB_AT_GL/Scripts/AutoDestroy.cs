@@ -14,7 +14,9 @@ public class AutoDestroy : MonoBehaviour
     void Start()
     {
         StartCoroutine(DistanceCheck());
+        StartCoroutine(VelocityCheck());
     }
+
     IEnumerator DistanceCheck()
     {
         yield return new WaitForSeconds(2f);
@@ -26,6 +28,21 @@ public class AutoDestroy : MonoBehaviour
         else
         {
             StartCoroutine(DistanceCheck());
+        }
+    }
+
+    IEnumerator VelocityCheck()
+    {
+        yield return new WaitForSeconds(5f);
+
+        if (gameObject.GetComponent<Rigidbody2D>().velocity.magnitude <= 0.1f)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            Debug.Log("Velocity magnitude : " + gameObject.GetComponent<Rigidbody2D>().velocity.magnitude);
+            StartCoroutine(VelocityCheck());
         }
     }
 
