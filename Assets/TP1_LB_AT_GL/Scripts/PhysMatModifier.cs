@@ -1,7 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// MADE BY : Alexandre Tremblay
+/// 
+/// Simple class that modifies the physical material of a collider2d.
+/// It randomly modifies the bounciness every 2 sec
+/// 
+/// </summary>
 public class PhysMatModifier : MonoBehaviour
 {
     [SerializeField] private PhysicsMaterial2D DefaultMaterial;

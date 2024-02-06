@@ -17,12 +17,6 @@ public class Spawner : MonoBehaviour
         Spawn();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void Spawn()
     {
         Instantiate(ObjectToSpawn, this.gameObject.transform);
