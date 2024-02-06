@@ -9538,12 +9538,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Background is made using layers to create a parallax effect.
-
-
-    In
-    the foreground, a custom sprite (the dragon) moves and collide with a basic sprite
-    (the rectangle), making it move away'
+  m_text: "L'arri\xE8re-plan est fait en utilisant des \"layers\" pour cr\xE9er un
+    effet parallaxe.\r\n\r\nAu premier plan, un \"sprite\" personnalis\xE9 (le dragon)
+    bouge et entre en collision avec un \"sprite\" basique (le rectangle), le faisant
+    se d\xE9placer."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9570,8 +9568,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 26
+  m_fontSizeBase: 26
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
