@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5417356730991423648}
   - component: {fileID: 5158063484255869210}
   - component: {fileID: 8504869160554089988}
+  - component: {fileID: 9165339810822364752}
   m_Layer: 0
   m_Name: Unnatural ball
   m_TagString: Untagged
@@ -161,4 +162,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b35e39ea8b89154ab859941324fa044, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawner: {fileID: 0}
+--- !u!114 &9165339810822364752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8118500644096930282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c86ab6acfeb2134a8c5d9585415dc61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefaultMaterial: {fileID: 0}
+  MinBounciness: 0.1
+  MaxBounciness: 2
